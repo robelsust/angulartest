@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="rsevent">
+<head>
+	<title>Angular Test</title>
+	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	
+	<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/eventtest.js"></script>
+	<style type="text/css" href="css/bootstrap/css/bootstrap.min.css"></style>
+</head>
+<body ng-controller="sController">
+
+<div class="row">
+	<div class="col-sm-6">Number 1: <input type="text" name="num1" ng-model="num1" ng-change="updateResult();"/></div>
+	<div class="col-sm-6">Number 2: <input type="text" name="num2" ng-model="num2" ng-change="updateResult();"/></div>
+</div>
+<div class="row">
+	<div class="col-sm-12">Result: of {{num1}} + {{num2}} is <strong>{{ result }}</strong></div>
+</div>
+
+</body>
+</html>
